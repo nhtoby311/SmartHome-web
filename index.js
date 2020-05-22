@@ -17,7 +17,13 @@ menu.addEventListener('click', function()
 {
     body.classList.toggle('open');
 });
-
+//Pre-load
+const image = selectElement('.hero');
+const bigImg = document.createElement("img");
+bigImg.onload = function(){
+    image.style.backgroundImage = "url(" +this.src + ")";
+};
+bigImg.src = "./pic/intro-final.jpg";
 
 // parallax
 window.addEventListener('scroll', function()
@@ -27,10 +33,10 @@ window.addEventListener('scroll', function()
     let count = 0;
 
     parallax.forEach(element => {
-        //if(scrollPosition<500){
+        if(this.innerWidth > 758){
         count++;
         element.style.transform = 'translateY(' +scrollPosition *(-0.5-(count*0.3)) +'px)';
-        //}
+        }
     });
     
 });
@@ -61,7 +67,11 @@ sr.reveal('.animate-top', {
 sr.reveal('.animate-bottom', {
     origin:'bottom',
     duration:2000,
-    distance:'10rem',
+    distance:'5rem',
     delay:600
 });
+
+//Language
+
+
 
