@@ -21,7 +21,12 @@ menu.addEventListener('click', function()
 const image = selectElement('.hero');
 const bigImg = document.createElement("img");
 bigImg.onload = function(){
-    image.style.backgroundImage = "url(" +this.src + ")";
+    try {
+        image.style.backgroundImage = "url(" +this.src + ")";
+    } catch (error) {
+        
+    }
+    
 };
 bigImg.src = "./pic/intro-final.jpg";
 
@@ -71,7 +76,43 @@ sr.reveal('.animate-bottom', {
     delay:600
 });
 
-//Language
+//COLOR PRODUCT
 
+
+const cards = selectElements('.container-products .card');
+const item_bg = function(index){
+    return cards.item(index).querySelector(".icon").querySelector(".item")
+};
+const colors = function(index){
+    return cards.item(index).querySelector(".product-colors").querySelectorAll("span")
+};
+
+const clickk = selectElements('.container-products .card .product-colors span');
+clickk.forEach(element => {
+    element.addEventListener('click',function()
+    {
+        console.log(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode));
+        colors(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode)).forEach(remove_element => {
+            remove_element.classList.remove("active");
+        });          
+        element.classList.add("active");
+        item_bg(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode)).style.backgroundImage = "url(" + element.getAttribute("data-pic") + ")";
+
+    });
+});
+
+
+
+function indexInParent(node) {
+    var children = node.parentNode.childNodes;
+    var num = 0;
+    for (var i=0; i<children.length; i++) {
+         if (children[i]==node) return num;
+         if (children[i].nodeType==1) num++;
+    }
+    return -1;
+}
+
+//Color product changing end
 
 
