@@ -147,7 +147,9 @@ header
 .headline
 {
     color: rgb(245, 186, 58);
-    text-shadow: 5px 6px 12px  #C84888,5px 6px 18px  #C84888;
+    text-shadow: 
+            5px 6px 12px  #C84888,
+            5px 6px 18px  #C84888;
     text-transform: uppercase;
     font-size: 80px;
     opacity: 0;
@@ -320,6 +322,52 @@ header
 
 /* Product end */
 
+/* about us */
+.about-us
+{
+    display:flex;
+    flex-direction: row;    
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10rem 8rem;
+}
+
+.image-cont
+{
+    width: 50vw;
+    height:50vh;
+    background-image:url(./pic/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 6px 20px grey;
+}
+
+.about-us-text
+{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100vw;
+}
+
+.about-us-text h1
+{
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us-text p
+{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+
+
+
+/* about us end */
+
 
 /* contact me */
 .end
@@ -376,6 +424,14 @@ h3
 .social-link
 {
     margin: 10px;
+}
+.copyright
+{
+    margin-top: 2rem;
+}
+.copyright h5
+{
+    color: var(--main-color-light);
 }
 /* contact me end */
 
@@ -895,6 +951,32 @@ h3
         line-height: 40px;
     }
     /* question what end */
+
+    .about-us
+    {
+        padding: 0 0;
+
+    }
+    .image-cont
+    {
+        display: none;
+    }
+    .about-us-text
+    {
+        margin: 0 2rem;
+    }
+    .about-us-text h1
+    {
+    font-size: 3rem;
+    }
+
+    .about-us-text p
+    {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    }
+
+
 
     /* contact me */
 
