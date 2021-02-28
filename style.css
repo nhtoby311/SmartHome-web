@@ -207,10 +207,6 @@ header
 {
     width: 100vw;
     height:100vh;
-    background-image:url(./pic/why.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: 5px 6px 20px grey;
 }
 .shadow-why                /* drop shadow for clip-path */
 {
@@ -901,7 +897,6 @@ h3
     {
         height:110vh;
         background-size: cover;
-        
     }
     .question
     {
