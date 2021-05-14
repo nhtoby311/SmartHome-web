@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,12 @@
     <link rel="preload" href="index.js" as="script">
 
     <link rel="stylesheet" href="./style.css" >
-    <title>Smart Home</title>
+    <title>Home - NH SmartHome</title>
 </head>
 <body>
+    <nav class="screen-reader">
+        <a href="#content">Skip to content</a>
+    </nav>
     <div class="wrapper">
     <header>
         <div class="container">
@@ -24,16 +27,19 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item animate-top">
-                        <a href="#hero" class="nav-link" >Home</a>
+                        <a href="#hero" class="nav-link"  style=" color: #FCCD12; border-bottom: #FCCD12 2px solid;">Home</a>
                     </li>
                     <li class="nav-item animate-top">
-                        <a href="#info" class="nav-link" >Info</a>
+                        <a href="smarthome-en.html" class="nav-link" >Info</a>
+                    </li>
+                    <li class="nav-item animate-top">
+                        <a href="pricing-en.html" class="nav-link" >Pricing</a>
                     </li>
                     <li class="nav-item animate-top">
                         <a href="product-en.html" class="nav-link" >Prodcuts</a>
                     </li>
                     <li class="nav-item animate-top">
-                        <a href="#contact" class="nav-link" >Contact</a>
+                        <a href="about-en.html" class="nav-link" >Contact</a>
                     </li>
                     <li class="nav-item">
                         <div class="language animate-left">
@@ -48,6 +54,7 @@
     </header>
     <!-- Header end -->
 
+    <main id="content">
     <!-- Hero Start -->
     <section class="hero" id="hero">          
         <div class="container parallax">
@@ -59,60 +66,18 @@
 
     <!-- question why -->
     <section class="why">
-        <div class="shadow-why">
-            <div class="container question animate-left">
-                <h1 class="question-headline" >Why SmartHome?</h1>
-                <p class="answer" >We are living in a time that technology is advance enough to be implemented to our home in order to make our life much more convinece than before </p>
-            </div>
+        <div class="why-bg">
         </div>
+        <h2 class="why-title">Why SmartHome?</h2>
+        <aside>
+            <p class="why-descrip">In the recent year, with the development of technology, we have been able to implement computers into our household devices which helps us in our household daily task </p>
+            <p class="why-descrip">SmartHome is an technology upgrade for your beloved home.</p>
+        </aside>
+        <a href="smarthome-en.html" class="why-btn">Learn More</a>
     </section>
     <!-- end question why -->
 
-    <!-- What can it help? start -->
-    <section class="what" id="info"> 
-        <div class="container question2">
-            <h1 class="question-headline" >What is SmartHome capable of?</h1>
-        </div>
-        <div class="container">
-            <div class="seperator">
-                <div class="left animate-left">
-                    <h2 class="attribute-headline" >Convience</h2>
-                    <p class="attribute-description" >- Control all device within one screen<br>- Remotely control from any member's devices<br>- Easy to understand, easy to use</p>
-                </div>
-                <div class="right animate-right">
-                    <img src="./pic/convinece.png" alt="">
-                </div>
-            </div>
-            <div class="seperator">
-                <div class="left animate-left">
-                    <img src="./pic/security.jpg" alt="">
-                </div>
-                <div class="right animate-right">
-                    <h2 class="attribute-headline" >Security</h2>
-                    <p class="attribute-description" >- Fully operate CCTV security system<br>- Monitoring camera within the same screen<br>- 24/7 local access, no need Internet</p>
-                </div>
-            </div>
-            <div class="seperator">
-                <div class="left animate-left">
-                    <h2 class="attribute-headline" >Entertainment</h2>
-                    <p class="attribute-description" >- Control TV and Lights with your voice or phone<br>- Access to 16 million color light<br>- Control multiple light with just a single button</p>
-                </div>
-                <div class="right animate-right">
-                    <img src="./pic/entertainment.jpg" alt="">
-                </div>
-            </div>
-            <div class="seperator">
-                <div class="left animate-left">
-                    <img src="./pic/energy saving.jpeg" alt="">
-                </div>
-                <div class="right animate-right">
-                    <h2 class="attribute-headline" >Energy Saving</h2>
-                    <p class="attribute-description" >- Energy efficient with AI technology <br>- Control energy usage<br>- Consumes much lower energy than Wifi devices</p>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <!-- What can it help? end -->
+    
 
     <!-- Product start -->
     <section>
@@ -122,29 +87,41 @@
     </section>
     <!-- Product end -->
 
+    <!-- Pricing Plan start -->
+    <section class="pricing-plan-section">
+        <div class="pricing-plan-section-bg"></div>
+        <h2 class="pricing-plan-section-title">Pricing Plans</h2>
+        <a href="pricing-en.html" class="pricing-plan-section-btn">Read More</a>
+    </section>
+    <!-- Pricing Plan end -->
+
     <!-- Let us help you  -->
     <section>
         <div class="container about-us">
             <div class="image-cont"></div>
             <div class="about-us-text">
-                <h1 class="about-us-headline">Why you should choose us</h1>
-                <p>- We want you to receive the convinece and improvement to your home
-                    <br> -  We brings the best possible solutions for your home, in both quality and finacially 
-                    <br> - The customer's satisfaction is our main goal, therefore, we will listen and provide your desire through out the whole process 
-                </p>   
+                <article>
+                    <h1 class="about-us-headline">Why you should choose us</h1>
+                    <p>- We want you to receive the convinece and improvement to your home
+                        <br> -  We brings the best possible solutions for your home, in both quality and finacially 
+                        <br> - The customer's satisfaction is our main goal, therefore, we will listen and provide your desire through out the whole process 
+                    </p>   
+                </article>
+                <a href="about-en.html" class="why-btn center-btn">Learn More</a>
             </div>
             
         </div>
     </section>
+    </main>
     <!-- Let us help you end  -->
 
 
     <!-- contact me  -->
-    <section class="end" id="contact">
+    <footer class="end" id="contact">
         <div class="containter contact">
             <h1 class="contact-headline animate-top" >Contact</h1>
             <div class="contact-info">
-                <h4 class="animate-left">Tel/Viber: +36 30 357 5613</h4>
+                <h2 class="animate-left">Tel/Viber: +36 30 357 5613</h2>
             </div>
             <div class="social animate-bottom">
                 <h3>Social</h3>
@@ -153,7 +130,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="32" height="32"
                     viewBox="0 0 172 172"
-                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,21.5c-35.5587,0 -64.5,28.9413 -64.5,64.5c0,35.5587 28.9413,64.5 64.5,64.5c35.5587,0 64.5,-28.9413 64.5,-64.5c0,-35.5587 -28.9413,-64.5 -64.5,-64.5zM86,32.25c29.74897,0 53.75,24.00103 53.75,53.75c0,27.0222 -19.82471,49.24186 -45.75049,53.09912v-37.42553h15.30616l2.40405,-15.54761h-17.71021v-8.49292c0,-6.45538 2.12086,-12.18823 8.15698,-12.18823h9.7002v-13.56347c-1.70387,-0.23113 -5.30974,-0.73486 -12.12524,-0.73486c-14.233,0 -22.5708,7.51416 -22.5708,24.63891v10.34058h-14.63428v15.54761h14.63428v37.28906c-25.51305,-4.20792 -44.91065,-26.23252 -44.91065,-52.96265c0,-29.74897 24.00103,-53.75 53.75,-53.75z"></path></g></g></a></svg>
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"  font-size="none"  style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,21.5c-35.5587,0 -64.5,28.9413 -64.5,64.5c0,35.5587 28.9413,64.5 64.5,64.5c35.5587,0 64.5,-28.9413 64.5,-64.5c0,-35.5587 -28.9413,-64.5 -64.5,-64.5zM86,32.25c29.74897,0 53.75,24.00103 53.75,53.75c0,27.0222 -19.82471,49.24186 -45.75049,53.09912v-37.42553h15.30616l2.40405,-15.54761h-17.71021v-8.49292c0,-6.45538 2.12086,-12.18823 8.15698,-12.18823h9.7002v-13.56347c-1.70387,-0.23113 -5.30974,-0.73486 -12.12524,-0.73486c-14.233,0 -22.5708,7.51416 -22.5708,24.63891v10.34058h-14.63428v15.54761h14.63428v37.28906c-25.51305,-4.20792 -44.91065,-26.23252 -44.91065,-52.96265c0,-29.74897 24.00103,-53.75 53.75,-53.75z"></path></g></g></svg>
                     </a>
                     </div>
                     <!-- <div class="social-link"><a href="https://www.instagram.com/n.toby.h/">
@@ -183,7 +160,7 @@
                 <h5>© 2020 NH All rights reserved.</h5>
             </div>
         </div>
-    </section>
+    </footer>
     <!-- contact me end -->
 
 

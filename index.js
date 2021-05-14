@@ -91,7 +91,7 @@ const clickk = selectElements('.container-products .card .product-colors span');
 clickk.forEach(element => {
     element.addEventListener('click',function()
     {
-        console.log(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode));
+        //console.log(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode));
         colors(indexInParent(element.parentNode.parentNode.parentNode.parentNode.parentNode)).forEach(remove_element => {
             remove_element.classList.remove("active");
         });          
