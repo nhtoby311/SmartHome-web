@@ -420,7 +420,7 @@ header
 .pricing-plan-section-bg
 {
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 100%;
     background-color: rgb(79, 144, 228);
     top: 5%;
@@ -1049,7 +1049,7 @@ h3
 .link-visit
 {
     color: blue;
-    text-decoration:underline;
+    text-decoration:underline !important;
 }
 
 .link-visit:visited
@@ -1218,7 +1218,37 @@ h3
 
 /* Animation end */
 
+@media screen and (max-width:1440px)
+{
+    .nav-item
+    {
+        margin: 0 1.7rem;
+    }
 
+    .why-bg
+    {
+        width: 90%;
+    }
+
+    .about-us-text h1
+    {
+        font-size: 4rem;
+    }
+
+
+    .about-us-text p
+    {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+
+
+    .pricing-grid-title h1
+    {
+        font-size: 3rem;
+    }
+}
 
 
 @media screen and (max-width:758px)
@@ -1311,6 +1341,12 @@ h3
     {
         height:110vh;
         background-size: cover;
+        width: 80vw;
+    }
+
+    .why-title
+    {
+        font-size: 4rem;
     }
     .question
     {
@@ -1405,6 +1441,42 @@ h3
         font-size:18px;
     }
 
+
+    .pricing-grid-cont
+    {
+        margin-top: 20%;
+    }
+
+    .pricing-grid-title h1
+    {
+        font-size: 2rem;
+    }
+
+    .pricing-grid-col h2
+    {
+        font-size: 1rem;
+    }
+
+    .pricing-grid-row h2
+    {
+        font-size: 1rem;
+    }
+
+
+    .about-us-who
+    {
+        margin-top: 12%;
+    }
+
+    .about-who-descrip h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .offer-descrip
+    {
+        flex-direction: column;
+    }
 
     /* PRODUCT PAGE!!! */
 
